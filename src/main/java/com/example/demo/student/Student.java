@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 
-// This is the most used class int the application
+// This is the most used class int the application. The other classes will use this class to manipulate records in the database
 
 @Entity// annotates this class as an entity
 @Table // and also as a table record?
@@ -82,7 +82,7 @@ public class Student {
         this.age = age;
     }
 
-    @Override
+    @Override // this method will override the built in .toString() method so that you can view instances of this class as a string
     public String toString() {
         return "Student{" +
                 "id=" + id +
